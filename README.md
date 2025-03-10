@@ -65,7 +65,7 @@ Follow these steps to set up and test Blocketch locally.
 ### Run the Container
 #### GUI Mode (requires display setup)
 For Linux with X11 forwarding or a local display:
-
+```
 docker run -it -p 2525:2525 
   -v ./config:/app/config 
   -v ./timestamps:/app/timestamps 
@@ -73,19 +73,19 @@ docker run -it -p 2525:2525
   -e DISPLAY=$DISPLAY 
   -v /tmp/.X11-unix:/tmp/.X11-unix 
   blocketch
-
+```
 
 
 On macOS/Windows, you may need a VNC viewer or XQuartz setup—see [Troubleshooting](#troubleshooting) for details.
 
 #### CLI Mode (headless, no GUI required)
-
+```
 docker run -it -p 2525:2525 
   -v ./config:/app/config 
   -v ./timestamps:/app/timestamps 
   -v ./emails:/app/emails 
   blocketch --no-gui
-
+```
 
 ### Configure the System
 1. GUI Mode: The Tkinter GUI will launch automatically. Enter your IMAP/SMTP details and email address, then click "Save".
@@ -94,20 +94,25 @@ docker run -it -p 2525:2525
 
 
 #### CLI Mode (headless, no GUI required)
+
+```
 docker run -it -p 2525:2525 
   -v ./config:/app/config 
   -v ./timestamps:/app/timestamps 
   -v ./emails:/app/emails 
   blocketch --no-gui
-  
+```
+
 ### Configure the System
 1. GUI Mode: The Tkinter GUI will launch automatically. Enter your IMAP/SMTP details and email address, then click "Save".
 2. CLI Mode: Configure SMTP settings in `.env`:
+```
 SMTP_HOST=smtp.gmail.com
    SMTP_PORT=587
    SMTP_USER=your-email@gmail.com
    SMTP_PASS=your-app-password
    EMAIL_FROM=timestamp@blocketch.example
+```
 
 3. Ensure port 2525 is accessible for incoming emails.
 
