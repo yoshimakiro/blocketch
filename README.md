@@ -173,6 +173,7 @@ See `requirements.txt` for the full list:
 - Contributors to the Bitcoin ecosystem for enabling trust-minimized solutions.
 - Yoshi for uploading the initial draft code.
 
-## Maintainer
-Gaurav (@bitcoinssg) - Contributor (not inventor). 10+ years as CTO/co-founder in tech projects. Passionate about Bitcoin, decentralization, and practical cryptography. Reach me on X (@bitcoinssg), email (bitcoinssg@gmail.com), or via my Linktree: https://linktr.ee/BitcoinsSG.
+## Contact Information
+
+For any queries or support, contact us here on github. 
 
