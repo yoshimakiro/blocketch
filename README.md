@@ -1,3 +1,5 @@
+![logo](./logo.png)
+
 # Blocketch: Email Timestamping on Bitcoin via OpenTimestamps
 
 Blocketch is a free, open-source service that timestamps emails using Bitcoin's blockchain through the OpenTimestamps (OTS) protocol. No signup or registration required—just send an email to the service, and receive a cryptographic proof of existence anchored to Bitcoin’s immutable ledger. Ideal for legal proofs, archival records, or securing intellectual property.
@@ -165,15 +167,12 @@ See `requirements.txt` for the full list:
 - SMTP Errors: If confirmation emails fail, check `.env` settings or ensure a local SMTP relay is running.
 - OTS Failures: If timestamping fails, verify the OTS calendar (`btc.calendar.opentimestamps.org`) is reachable. Additional calendars can be added in `main.py`.
 
-## License
-[MIT License](LICENSE) - feel free to use, modify, and distribute.
-
 ## Acknowledgments
 - OpenTimestamps team for their awesome protocol.
 - Contributors to the Bitcoin ecosystem for enabling trust-minimized solutions.
-- Yoshi for uploading the initial draft code.
+
 
 ## Contact Information
 
-For any queries or support, contact us here on github. 
+For any queries or support, contact us here on github or me at yoshimakiro@proton.me
 
